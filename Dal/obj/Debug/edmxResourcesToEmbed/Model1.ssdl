@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="kindergardenModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ArrivalChildren">
+    <Key>
+      <PropertyRef Name="ChildId" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="ChildId" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="ArrivalTime" Type="time" Precision="7" />
+  </EntityType>
+  <EntityType Name="Children">
+    <Key>
+      <PropertyRef Name="ChildId" />
+    </Key>
+    <Property Name="ChildId" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="ChildName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ChildClass" Type="int" Nullable="false" />
+    <Property Name="ChildGroup" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Connections">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="ChildId" />
+    </Key>
+    <Property Name="UserId" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="ChildId" Type="varchar" MaxLength="9" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DailyAlerts">
+    <Key>
+      <PropertyRef Name="ChildId" />
+    </Key>
+    <Property Name="ChildId" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="AvgTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="IsComing?" Type="bit" Nullable="false" />
+    <Property Name="IsMissing?" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="9" Nullable="false" />
+  </EntityType>
+  <Function Name="empGetChildIdSp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="empGetChildIsComingSp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChildId" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="empGetChildIsMissingSp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChildId" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="empGetChildSp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="empGetPasswordSp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="empGetTopUserIdSp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="empGetUserIdSp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChildId" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="empGetUserSp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="kindergardenModelStoreContainer">
+    <EntitySet Name="ArrivalChildren" EntityType="Self.ArrivalChildren" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Children" EntityType="Self.Children" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Connections" EntityType="Self.Connections" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DailyAlerts" EntityType="Self.DailyAlerts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="kindergardenModelStoreContainer" CdmEntityContainer="kindergardenEntities">
+    <EntitySetMapping Name="ArrivalChildren">
+      <EntityTypeMapping TypeName="kindergardenModel.ArrivalChildren">
+        <MappingFragment StoreEntitySet="ArrivalChildren">
+          <ScalarProperty Name="ChildId" ColumnName="ChildId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ArrivalTime" ColumnName="ArrivalTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Children">
+      <EntityTypeMapping TypeName="kindergardenModel.Children">
+        <MappingFragment StoreEntitySet="Children">
+          <ScalarProperty Name="ChildId" ColumnName="ChildId" />
+          <ScalarProperty Name="ChildName" ColumnName="ChildName" />
+          <ScalarProperty Name="ChildClass" ColumnName="ChildClass" />
+          <ScalarProperty Name="ChildGroup" ColumnName="ChildGroup" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Connections">
+      <EntityTypeMapping TypeName="kindergardenModel.Connections">
+        <MappingFragment StoreEntitySet="Connections">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ChildId" ColumnName="ChildId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DailyAlerts">
+      <EntityTypeMapping TypeName="kindergardenModel.DailyAlerts">
+        <MappingFragment StoreEntitySet="DailyAlerts">
+          <ScalarProperty Name="ChildId" ColumnName="ChildId" />
+          <ScalarProperty Name="AvgTime" ColumnName="AvgTime" />
+          <ScalarProperty Name="IsComing_" ColumnName="IsComing?" />
+          <ScalarProperty Name="IsMissing_" ColumnName="IsMissing?" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="kindergardenModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="empGetChildIdSp" FunctionName="kindergardenModel.Store.empGetChildIdSp" />
+    <FunctionImportMapping FunctionImportName="empGetChildIsComingSp" FunctionName="kindergardenModel.Store.empGetChildIsComingSp" />
+    <FunctionImportMapping FunctionImportName="empGetChildIsMissingSp" FunctionName="kindergardenModel.Store.empGetChildIsMissingSp" />
+    <FunctionImportMapping FunctionImportName="empGetChildSp" FunctionName="kindergardenModel.Store.empGetChildSp" />
+    <FunctionImportMapping FunctionImportName="empGetPasswordSp" FunctionName="kindergardenModel.Store.empGetPasswordSp" />
+    <FunctionImportMapping FunctionImportName="empGetTopUserIdSp" FunctionName="kindergardenModel.Store.empGetTopUserIdSp" />
+    <FunctionImportMapping FunctionImportName="empGetUserIdSp" FunctionName="kindergardenModel.Store.empGetUserIdSp" />
+    <FunctionImportMapping FunctionImportName="empGetUserSp" FunctionName="kindergardenModel.Store.empGetUserSp" />
+  </EntityContainerMapping>
+</Mapping>

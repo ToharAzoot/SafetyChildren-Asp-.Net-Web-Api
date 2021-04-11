@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="kindergardenModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ArrivalChildren">
+    <Key>
+      <PropertyRef Name="ChildId" />
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="ChildId" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ArrivalTime" Type="Time" Precision="7" />
+  </EntityType>
+  <EntityType Name="Children">
+    <Key>
+      <PropertyRef Name="ChildId" />
+    </Key>
+    <Property Name="ChildId" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ChildName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ChildClass" Type="Int32" Nullable="false" />
+    <Property Name="ChildGroup" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Connections">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="ChildId" />
+    </Key>
+    <Property Name="UserId" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ChildId" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DailyAlerts">
+    <Key>
+      <PropertyRef Name="ChildId" />
+    </Key>
+    <Property Name="ChildId" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AvgTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="IsComing_" Type="Boolean" Nullable="false" />
+    <Property Name="IsMissing_" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="kindergardenEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ArrivalChildren" EntityType="Self.ArrivalChildren" />
+    <EntitySet Name="Children" EntityType="Self.Children" />
+    <EntitySet Name="Connections" EntityType="Self.Connections" />
+    <EntitySet Name="DailyAlerts" EntityType="Self.DailyAlerts" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <FunctionImport Name="empGetChildIdSp" ReturnType="Collection(String)" />
+    <FunctionImport Name="empGetChildIsComingSp" ReturnType="Collection(Boolean)">
+      <Parameter Name="ChildId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="empGetChildIsMissingSp" ReturnType="Collection(Boolean)">
+      <Parameter Name="ChildId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="empGetChildSp" ReturnType="Collection(String)">
+      <Parameter Name="UserId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="empGetPasswordSp" ReturnType="Collection(Int32)">
+      <Parameter Name="Password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="empGetTopUserIdSp" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="empGetUserIdSp" ReturnType="Collection(String)">
+      <Parameter Name="ChildId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="empGetUserSp" ReturnType="Collection(String)">
+      <Parameter Name="UserId" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>
