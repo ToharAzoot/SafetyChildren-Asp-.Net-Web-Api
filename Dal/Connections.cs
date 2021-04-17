@@ -16,13 +16,5 @@ namespace Dal
     {
         public string UserId { get; set; }
         public string ChildId { get; set; }
-        public Connections(string childId, string userId)
-        {
-            ChildId = childId;
-            UserId = userId;
-        }
-        public Connections()
-        {
-        }
     }
 }
