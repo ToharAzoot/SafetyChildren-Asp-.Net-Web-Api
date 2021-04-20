@@ -25,10 +25,10 @@ namespace SaftyChildren.Controllers
         [Route("AddUser")]
         public IHttpActionResult AddUser(UsrDto us)
         {
-           return Ok(Bl.UserBl.AddUser(us));
-          // if (b)
-           //     return Ok();
-           // return BadRequest();
+            return Ok(Bl.UserBl.AddUser(us));
+            // if (b)
+            //     return Ok();
+            // return BadRequest();
 
         }
         [HttpGet]
@@ -46,6 +46,24 @@ namespace SaftyChildren.Controllers
                 return Ok();
             return BadRequest();
         }
+        [HttpGet]
+        [Route("ChackIfSendAReminderEmail")]
+        public IHttpActionResult ChackIfSendAReminder()
+        {
+            return Ok(Bl.UserBl.ChackIfSendAReminderEmail());
+        }
+        [HttpGet]
+        [Route("ConfirmationArrivalChild/{IdChild}")]
+        public IHttpActionResult ConfirmationArrivalChild(int IdChild)
+        {
+            return Ok(Bl.UserBl.ConfirmationArrivalChild(IdChild));
 
+        }
+        [HttpGet]
+        [Route("ResetDailyAlerts")]
+        public IHttpActionResult ResetDailyAlerts()
+        {
+            return Ok(Bl.UserBl.ResetDailyAlerts());
+        }
     }
 }

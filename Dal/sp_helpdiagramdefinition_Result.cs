@@ -10,11 +10,10 @@
 namespace Dal
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Connections
+    public partial class sp_helpdiagramdefinition_Result
     {
-        public string UserId { get; set; }
-        public string ChildId { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

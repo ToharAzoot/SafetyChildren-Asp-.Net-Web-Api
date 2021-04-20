@@ -14,20 +14,11 @@ namespace Dal
     
     public partial class DailyAlerts
     {
-        public string ChildId { get; set; }
+        public int ChildId { get; set; }
         public System.TimeSpan AvgTime { get; set; }
         public bool IsComing_ { get; set; }
         public bool IsMissing_ { get; set; }
-
-        public DailyAlerts(string childId, TimeSpan avgTime, bool isComing_, bool isMissing_)
-        {
-            ChildId = childId;
-            AvgTime = avgTime;
-            IsComing_ = isComing_;
-            IsMissing_ = isMissing_;
-        }
-        public DailyAlerts()
-        {
-        }
+    
+        public virtual Children Children { get; set; }
     }
 }

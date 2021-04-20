@@ -70,7 +70,7 @@ namespace SaftyChildren.Controllers
         //}
         [HttpPost]
         [Route("Addtimecoming/{id}")]
-        public IHttpActionResult Addtimecoming(string id)
+        public IHttpActionResult Addtimecoming(int id)
         {
             bool b = Bl.PropertyChildrenBl.Addtimecoming(id);
             if (b)

@@ -8,7 +8,7 @@ namespace Dto
 {
   public  class PropertyChildrenDto
     {
-        public string ChildId { get; set; }
+        public int ChildId { get; set; }
         public string ChildName { get; set; }
         public int ChildClass { get; set; }
         public string ChildGroup { get; set; }

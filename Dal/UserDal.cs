@@ -36,7 +36,9 @@ namespace Dal
                         Connections so;
                         so=db.Connections.Find(c,v);
                         db.Connections.Remove(so);
-                        Connections f=new Connections(v, us.Password);
+                        Connections f=new Connections();
+                        f.ChildId = v;
+                        f.UserId = us.Password;
                         db.Connections.Add(f);
                         db.SaveChanges();
                     }

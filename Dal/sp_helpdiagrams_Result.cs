@@ -10,11 +10,13 @@
 namespace Dal
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Connections
+    public partial class sp_helpdiagrams_Result
     {
-        public string UserId { get; set; }
-        public string ChildId { get; set; }
+        public string Database { get; set; }
+        public string Name { get; set; }
+        public int ID { get; set; }
+        public string Owner { get; set; }
+        public int OwnerID { get; set; }
     }
 }

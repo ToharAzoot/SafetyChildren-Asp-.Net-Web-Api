@@ -12,9 +12,14 @@ namespace Dal
     using System;
     using System.Collections.Generic;
     
-    public partial class Connections
+    public partial class Message
     {
-        public string UserId { get; set; }
-        public string ChildId { get; set; }
+        public int IDMessage { get; set; }
+        public Nullable<int> IDParent { get; set; }
+        public Nullable<System.DateTime> Date { get; set; }
+        public string MessegeType { get; set; }
+        public Nullable<int> IDChild { get; set; }
+    
+        public virtual Parent Parent { get; set; }
     }
 }

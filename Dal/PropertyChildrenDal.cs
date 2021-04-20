@@ -13,10 +13,10 @@ namespace Dal
             using (kindergardenEntities db = new kindergardenEntities())
             {
 
-                List<string> Children = db.empGetChildIdSp().ToList();
+                //List<string> Children = db.empGetChildIdSp().ToList();
                 List<Class1> podto = new List<Class1>();
-                foreach (string c in Children)
-                    podto.Add(new Class1(c));
+                //foreach (string c in Children)
+                //    podto.Add(new Class1(c));
                 return podto;
             }
         }
@@ -65,9 +65,15 @@ namespace Dal
                 db.Children.Add(ch);
                 int iduser=db.Users.Max(i => i.UserId);
                 Users u = db.Users.Find(iduser);
-                Connections f = new Connections(ch.ChildId, u.Password);
+                Connections f = new Connections();
+                f.ChildId = ch.ChildId.ToString();
+                f.UserId = u.Password;
                 db.Connections.Add(f);
-                DailyAlerts d = new DailyAlerts(ch.ChildId,TimeSpan.Parse("0"), false, false);
+                DailyAlerts d = new DailyAlerts();
+                d.ChildId = ch.ChildId;
+                d.AvgTime = TimeSpan.Parse("0");
+                d.IsComing_ = false;
+                d.IsMissing_ = false;
                 db.DailyAlerts.Add(d);
                 db.SaveChanges();
                 return true;

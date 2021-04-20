@@ -14,8 +14,10 @@ namespace Dal
     
     public partial class ArrivalChildren
     {
-        public string ChildId { get; set; }
+        public int ChildId { get; set; }
         public System.DateTime Date { get; set; }
         public Nullable<System.TimeSpan> ArrivalTime { get; set; }
+    
+        public virtual Children Children { get; set; }
     }
 }
