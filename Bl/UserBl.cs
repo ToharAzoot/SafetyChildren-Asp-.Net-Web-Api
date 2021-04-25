@@ -112,7 +112,7 @@ namespace Bl
                         else
                         {
                             children = db.Children.FirstOrDefault(c => c.ChildId == DA.ChildId);
-                            string mailBody = File.ReadAllText(@"C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\SaftyChildren\file\messege.html");
+                            //string mailBody = File.ReadAllText(@"C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\SaftyChildren\file\messege.html");
 
                             //mailBody = mailBody.Replace("@Pname", children.Parent.First().ParentName);
                             //mailBody = mailBody.Replace("@Cname", children.ChildName);

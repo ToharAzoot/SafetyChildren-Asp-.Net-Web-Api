@@ -79,12 +79,13 @@ namespace Bl
             {
                 // ArrivalChildren p = db.ArrivalChildrens.Find(id);
                 //db.ArrivalChildrens.Remove(p);
-                Children c=null;
-                c=db.Children.Find(id);
-                if (c!=null)
+                int child_id = Int32.Parse(id);
+                Children c = db.Children.Find(child_id);
+                Console.WriteLine(c);
+                if (c != null)
                 {
                     ArrivalChildren p1 = new ArrivalChildren();
-                    //p1.ChildId = id;
+                    p1.ChildId = child_id;
                     p1.Date = DateTime.Today;
                     p1.ArrivalTime = DateTime.Now.TimeOfDay;
                     db.ArrivalChildren.Add(p1);

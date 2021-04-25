@@ -43,8 +43,9 @@ namespace Dal
         {
             using (kindergardenEntities db = new kindergardenEntities())
             {
+                int id_check = Int32.Parse(id);
 
-                Children f = db.Children.Find(id);
+                Children f = db.Children.Find(id_check);
                 if (f == null)
                     return false;
                 else
@@ -55,7 +56,8 @@ namespace Dal
         {
             using (kindergardenEntities db = new kindergardenEntities())
             {
-               Children c = db.Children.Find(id);
+                int id_check = Int32.Parse(id);
+               Children c = db.Children.Find(id_check);
                 return c;
             }
         }
@@ -63,6 +65,8 @@ namespace Dal
         {
             using (kindergardenEntities db = new kindergardenEntities())
             {
+                //create here the child with the right information
+                //-----------------------------------------------
                 db.Children.Add(ch);
                 int iduser=db.Users.Max(i => i.UserId);
                 Users u = db.Users.Find(iduser);
