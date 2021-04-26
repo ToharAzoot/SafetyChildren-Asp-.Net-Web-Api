@@ -30,3 +30,4 @@ C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChil
 C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.csproj.CopyComplete
 C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.dll
 C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.pdb
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
