@@ -32,6 +32,7 @@ C:\Users\User\Desktop\project\SafetyChildren-Asp-.Net-Web-Api\Bl\obj\Debug\Bl.cs
 C:\Users\User\Desktop\project\SafetyChildren-Asp-.Net-Web-Api\Bl\obj\Debug\Bl.csproj.CopyComplete
 C:\Users\User\Desktop\project\SafetyChildren-Asp-.Net-Web-Api\Bl\obj\Debug\Bl.dll
 C:\Users\User\Desktop\project\SafetyChildren-Asp-.Net-Web-Api\Bl\obj\Debug\Bl.pdb
+<<<<<<< HEAD
 C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\Bl.dll.config
 C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\Bl.dll
 C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\Bl.pdb
@@ -49,3 +50,23 @@ C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChil
 C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Bl\obj\Debug\Bl.csproj.CopyComplete
 C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Bl\obj\Debug\Bl.dll
 C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Bl\obj\Debug\Bl.pdb
+=======
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\Bl.dll.config
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\Bl.dll
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\Bl.pdb
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\Dal.dll
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\Dto.dll
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\EntityFramework.dll
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\Dal.pdb
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\Dal.dll.config
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\Dto.pdb
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\Dto.dll.config
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\EntityFramework.xml
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\obj\Debug\Bl.csprojAssemblyReference.cache
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\obj\Debug\Bl.csproj.CoreCompileInputs.cache
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\obj\Debug\Bl.csproj.CopyComplete
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\obj\Debug\Bl.dll
+C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Bl\obj\Debug\Bl.pdb
+>>>>>>> 2c906bf0ffcd851696f6620f21c1b31830e30866

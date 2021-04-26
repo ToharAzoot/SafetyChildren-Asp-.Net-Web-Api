@@ -84,7 +84,7 @@ namespace Bl
                 if (c!=null)
                 {
                     ArrivalChildren p1 = new ArrivalChildren();
-                    p1.ChildId = id;
+                    //p1.ChildId = id;
                     p1.Date = DateTime.Today;
                     p1.ArrivalTime = DateTime.Now.TimeOfDay;
                     db.ArrivalChildren.Add(p1);

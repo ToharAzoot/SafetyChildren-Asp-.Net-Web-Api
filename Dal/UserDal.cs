@@ -36,10 +36,15 @@ namespace Dal
                         Connections so;
                         so=db.Connections.Find(c,v);
                         db.Connections.Remove(so);
+<<<<<<< HEAD
                         Connections f=new Connections();
                         f.ChildId = v;
                         f.UserId = us.Password;
                         db.Connections.Add(f);
+=======
+                        //Connections f=new Connections(v, us.Password);
+                        //db.Connections.Add(f);
+>>>>>>> 2c906bf0ffcd851696f6620f21c1b31830e30866
                         db.SaveChanges();
                     }
                 }
