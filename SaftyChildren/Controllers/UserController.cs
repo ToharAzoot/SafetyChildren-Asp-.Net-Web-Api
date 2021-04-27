@@ -50,11 +50,19 @@ namespace SaftyChildren.Controllers
         [Route("ChackIfSendAReminderEmail")]
         public IHttpActionResult ChackIfSendAReminder()
         {
+<<<<<<< HEAD
             return Ok(Bl.UserBl.ChackIfSendAReminderEmail());
         }
         [HttpGet]
         [Route("ConfirmationArrivalChild/{IdChild}")]
         public IHttpActionResult ConfirmationArrivalChild(int IdChild)
+=======
+            return Ok(Bl.UserBl.ChackIfSendAReminderEmail()    );
+        }
+       [HttpGet]
+       [Route("ConfirmationArrivalChild/{IdChild}")]
+       public IHttpActionResult ConfirmationArrivalChild(int IdChild)
+>>>>>>> 2c906bf0ffcd851696f6620f21c1b31830e30866
         {
             return Ok(Bl.UserBl.ConfirmationArrivalChild(IdChild));
 

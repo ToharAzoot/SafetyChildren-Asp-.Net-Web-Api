@@ -23,7 +23,7 @@ namespace Dto
         }
         public PropertyChildrenDto(Children po)
         {
-            ChildId = po.ChildId;
+            //ChildId = po.ChildId;
             ChildName = po.ChildName;
             ChildClass = po.ChildClass;
             ChildGroup = po.ChildGroup;
@@ -33,7 +33,7 @@ namespace Dto
         {
             return new Children
             {
-            ChildId = po.ChildId,
+            //ChildId = po.ChildId,
             ChildName = po.ChildName,
             ChildClass = po.ChildClass,
             ChildGroup = po.ChildGroup

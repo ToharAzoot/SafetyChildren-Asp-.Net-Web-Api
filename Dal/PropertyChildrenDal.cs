@@ -18,6 +18,7 @@ namespace Dal
                 //foreach (string c in Children)
                 //    podto.Add(new Class1(c));
                 return podto;
+
             }
         }
         public static string GetUser(string id)
@@ -65,6 +66,7 @@ namespace Dal
                 db.Children.Add(ch);
                 int iduser=db.Users.Max(i => i.UserId);
                 Users u = db.Users.Find(iduser);
+<<<<<<< HEAD
                 Connections f = new Connections();
                 f.ChildId = ch.ChildId.ToString();
                 f.UserId = u.Password;
@@ -75,6 +77,12 @@ namespace Dal
                 d.IsComing_ = false;
                 d.IsMissing_ = false;
                 db.DailyAlerts.Add(d);
+=======
+                //Connections f = new Connections(ch.ChildId, u.Password);
+                //db.Connections.Add(f);
+                //DailyAlerts d = new DailyAlerts(ch.ChildId,TimeSpan.Parse("0"), false, false,);
+                //db.DailyAlerts.Add(d);
+>>>>>>> 2c906bf0ffcd851696f6620f21c1b31830e30866
                 db.SaveChanges();
                 return true;
             }
