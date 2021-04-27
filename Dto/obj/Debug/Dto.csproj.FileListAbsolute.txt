@@ -26,6 +26,22 @@ C:\Users\User\Desktop\project\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.
 C:\Users\User\Desktop\project\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.csproj.CopyComplete
 C:\Users\User\Desktop\project\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.dll
 C:\Users\User\Desktop\project\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.pdb
+<<<<<<< HEAD
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\Dto.dll.config
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\Dto.dll
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\Dto.pdb
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\Dal.dll
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\EntityFramework.dll
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\Dal.pdb
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\Dal.dll.config
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\EntityFramework.xml
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.csprojAssemblyReference.cache
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.csproj.CopyComplete
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.dll
+C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.pdb
+=======
 C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\Dto.dll.config
 C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\Dto.dll
 C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\Dto.pdb
@@ -41,6 +57,7 @@ C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dt
 C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.csproj.CopyComplete
 C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.dll
 C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.pdb
+<<<<<<< HEAD
 C:\Users\rucha\Desktop\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.dll
 C:\Users\rucha\Desktop\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.pdb
 C:\Users\rucha\Desktop\SafetyChildren-Asp-.Net-Web-Api\Dto\bin\Debug\Dto.dll.config
@@ -71,3 +88,6 @@ C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.cspro
 C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.csproj.CopyComplete
 C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.dll
 C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dto\obj\Debug\Dto.pdb
+=======
+>>>>>>> 2c906bf0ffcd851696f6620f21c1b31830e30866
+>>>>>>> 9d4c83c576adc4d4b5d3ad4638082ed0be848f6c

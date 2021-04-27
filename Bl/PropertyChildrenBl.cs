@@ -78,16 +78,22 @@ namespace Bl
                 return pass;
             }
         }
-        public static bool Addtimecoming(string id)
+        public static bool Addtimecoming(int id)
         {
             using (kindergardenEntities db = new kindergardenEntities())
             {
-                // ArrivalChildren p = db.ArrivalChildrens.Find(id);
+                //ArrivalChildren p = db.ArrivalChildrens.Find(id);
                 //db.ArrivalChildrens.Remove(p);
+<<<<<<< HEAD
                 int child_id = Int32.Parse(id);
                 Children c = db.Children.Find(child_id);
                 Console.WriteLine(c);
                 if (c != null)
+=======
+                Children c =null;
+                c=db.Children.Find(id);
+                if (c!=null)
+>>>>>>> 9d4c83c576adc4d4b5d3ad4638082ed0be848f6c
                 {
                     ArrivalChildren p1 = new ArrivalChildren();
                     p1.ChildId = child_id;

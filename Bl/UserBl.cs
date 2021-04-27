@@ -26,7 +26,7 @@ namespace Bl
             {
                 Users poDal = UsrDto.Todal(us);
                 int id = 0;
-                id+= UserDal.AddUser(poDal);
+                id += UserDal.AddUser(poDal);
                 if (id != 0)
                     return true;
             }
@@ -39,8 +39,8 @@ namespace Bl
                 bool id = false;
                 Users poDal = UsrDto.Todal(us);
                 string v = us.childId;
-                if (poDal.UserName != null && poDal.Password != null )
-                    id = UserDal.UpdateUser(poDal,v);
+                if (poDal.UserName != null && poDal.Password != null)
+                    id = UserDal.UpdateUser(poDal, v);
                 return id;
 
             }
@@ -96,7 +96,11 @@ namespace Bl
                                 // בדיקה האם הודיעה נשלחה לפני יותר מ15 דק אפ כן נשלח הודעה שוב 
                                 if (M.Date.Value.AddMinutes(15).TimeOfDay > DateTime.Now.TimeOfDay)
                                 {
+<<<<<<< HEAD
+                                    string mailBody = File.ReadAllText(@"C:\Users\טהר אזוט\Documents\פרויקט מעון\KinderGarden\SafetyChildren-Asp-.Net-Web-Api\SaftyChildren\file\messege.html");
+=======
                                     string mailBody = File.ReadAllText(@"C:\Users\Shira\Desktop\טוהר\SafetyChildren-Asp-.Net-Web-Api\SaftyChildren\file\messege.html");
+>>>>>>> 2c906bf0ffcd851696f6620f21c1b31830e30866
 
                                     children = db.Children.FirstOrDefault(c => c.ChildId == DA.ChildId);
                                     mailBody = mailBody.Replace("@Pname", children.Parent.First().ParentName);
@@ -124,12 +128,21 @@ namespace Bl
                         }
 
                     }
+<<<<<<< HEAD
+                }
+            }
+            return true;
+        }
+        // שליחת מייל 
+        public static void sendEmail(string email, string Subject, string Body)
+=======
     }
 }
             return true;
         }
         // שליחת מייל 
         public static void sendEmail(string email , string Subject, string Body)
+>>>>>>> 2c906bf0ffcd851696f6620f21c1b31830e30866
         {
             try
             {
@@ -156,12 +169,20 @@ namespace Bl
             }
         }
         // אישור הגעת ילד 
+<<<<<<< HEAD
+        public static bool ConfirmationArrivalChild(int IdChild)
+=======
         public static bool ConfirmationArrivalChild (int IdChild)
+>>>>>>> 2c906bf0ffcd851696f6620f21c1b31830e30866
         {
             using (kindergardenEntities db = new kindergardenEntities())
             {
                 DailyAlerts dailyAlerts = db.DailyAlerts.FirstOrDefault(d => d.ChildId == IdChild);
+<<<<<<< HEAD
+                if (dailyAlerts != null)
+=======
                 if (dailyAlerts!= null)
+>>>>>>> 2c906bf0ffcd851696f6620f21c1b31830e30866
                 {
                     // כאן יש שאלה האם זה מעדכן כל יום איך זה עובד אולי צריך לשעות שינויים בהדעת הילד שיש שם תאריך 
                     dailyAlerts.IsMissing_ = true;
@@ -175,7 +196,11 @@ namespace Bl
             }
         }
         // פונקציה שנשלחת ע"י הלקוח פעם ביום בשעה 6 ומאפסת את אישור הגעת הילד 
+<<<<<<< HEAD
+        public static bool ResetDailyAlerts()
+=======
         public static  bool ResetDailyAlerts ()
+>>>>>>> 2c906bf0ffcd851696f6620f21c1b31830e30866
         {
             using (kindergardenEntities db = new kindergardenEntities())
             {
