@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,10 +13,13 @@ namespace Dal
             using (kindergardenEntities db = new kindergardenEntities())
             {
 
-                //List<string> Children = db.empGetChildIdSp().ToList();
+                List<int?> Children = db.empGetChildIdSp().ToList();
+                List<string> temp = new List<string>();
+                foreach (int? c in Children)
+                    temp.Add(Convert.ToString(c));
                 List<Class1> podto = new List<Class1>();
-                //foreach (string c in Children)
-                //    podto.Add(new Class1(c));
+                foreach (string c in temp)
+                    podto.Add(new Class1(c));
                 return podto;
 
             }
@@ -43,8 +46,9 @@ namespace Dal
         {
             using (kindergardenEntities db = new kindergardenEntities())
             {
+                int id_check = Int32.Parse(id);
 
-                Children f = db.Children.Find(Convert.ToInt32(id));
+                Children f = db.Children.Find(id_check);
                 if (f == null)
                     return false;
                 else
@@ -55,7 +59,8 @@ namespace Dal
         {
             using (kindergardenEntities db = new kindergardenEntities())
             {
-               Children c = db.Children.Find(Convert.ToInt32(id));
+                int id_check = Int32.Parse(id);
+               Children c = db.Children.Find(id_check);
                 return c;
             }
         }
@@ -63,13 +68,14 @@ namespace Dal
         {
             using (kindergardenEntities db = new kindergardenEntities())
             {
+                //create here the child with the right information
+                //-----------------------------------------------
                 db.Children.Add(ch);
                 int iduser=db.Users.Max(i => i.UserId);
                 Users u = db.Users.Find(iduser);
-<<<<<<< HEAD
                 Connections f = new Connections();
-                f.ChildId = ch.ChildId.ToString();
-                f.UserId = u.Password;
+                f.ChildId = Convert.ToString(ch.ChildId);
+                f.UserId = Convert.ToString(u.UserId);
                 db.Connections.Add(f);
                 DailyAlerts d = new DailyAlerts();
                 d.ChildId = ch.ChildId;
@@ -77,12 +83,6 @@ namespace Dal
                 d.IsComing_ = false;
                 d.IsMissing_ = false;
                 db.DailyAlerts.Add(d);
-=======
-                //Connections f = new Connections(ch.ChildId, u.Password);
-                //db.Connections.Add(f);
-                //DailyAlerts d = new DailyAlerts(ch.ChildId,TimeSpan.Parse("0"), false, false,);
-                //db.DailyAlerts.Add(d);
->>>>>>> 2c906bf0ffcd851696f6620f21c1b31830e30866
                 db.SaveChanges();
                 return true;
             }
