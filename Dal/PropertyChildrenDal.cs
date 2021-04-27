@@ -43,7 +43,7 @@ namespace Dal
             using (kindergardenEntities db = new kindergardenEntities())
             {
 
-                Children f = db.Children.Find(id);
+                Children f = db.Children.Find(Convert.ToInt32(id));
                 if (f == null)
                     return false;
                 else
@@ -54,7 +54,7 @@ namespace Dal
         {
             using (kindergardenEntities db = new kindergardenEntities())
             {
-               Children c = db.Children.Find(id);
+               Children c = db.Children.Find(Convert.ToInt32(id));
                 return c;
             }
         }
