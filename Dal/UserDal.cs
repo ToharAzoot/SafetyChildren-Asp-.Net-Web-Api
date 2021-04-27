@@ -56,7 +56,7 @@ namespace Dal
                 {
                     Users d = db.Users.Find(i);
                     return d;
-                  }
+                }
                 return null;
             }
         }

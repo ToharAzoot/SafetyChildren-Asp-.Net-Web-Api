@@ -44,3 +44,15 @@ C:\Users\rucha\Desktop\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.csproj.
 C:\Users\rucha\Desktop\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.csproj.CopyComplete
 C:\Users\rucha\Desktop\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.dll
 C:\Users\rucha\Desktop\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.pdb
+C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dal\bin\Debug\Dal.dll.config
+C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dal\bin\Debug\Dal.dll
+C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dal\bin\Debug\Dal.pdb
+C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dal\bin\Debug\EntityFramework.dll
+C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dal\bin\Debug\EntityFramework.xml
+C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.dll
+C:\Users\rucha\Downloads\SafetyChildren-Asp-.Net-Web-Api\Dal\obj\Debug\Dal.pdb

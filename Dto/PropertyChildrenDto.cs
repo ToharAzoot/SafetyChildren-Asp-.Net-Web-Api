@@ -33,7 +33,7 @@ namespace Dto
         {
             return new Children
             {
-            //ChildId = po.ChildId,
+            ChildId = Int32.Parse(po.ChildId),
             ChildName = po.ChildName,
             ChildClass = po.ChildClass,
             ChildGroup = po.ChildGroup

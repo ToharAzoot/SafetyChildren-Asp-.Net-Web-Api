@@ -62,7 +62,12 @@ namespace Bl
             using (kindergardenEntities db = new kindergardenEntities())
             {
                 Children pass = PropertyChildrenDal.Getallpropertyc(id);
-                return pass;
+                Children c = new Children();
+                c.ChildId = pass.ChildId;
+                c.ChildName = pass.ChildName;
+                c.ChildGroup = pass.ChildGroup;
+                c.ChildClass = pass.ChildClass;
+                return c;
             }
         }
         public static bool Checkifthereislike(string id)
